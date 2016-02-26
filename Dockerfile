@@ -8,4 +8,4 @@ ADD nginx.conf /etc/nginx/
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 EXPOSE 80
 
-CMD ["/usr/bin/mfsmount /mnt/MFS -H 10.2.0.91 -o allow_other; service nginx start"]
+CMD ["/usr/bin/mfsmount /mnt/MFS -H 10.2.0.91 -o allow_other & service nginx start"]
