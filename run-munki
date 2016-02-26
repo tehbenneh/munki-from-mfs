@@ -1,1 +1,3 @@
-/usr/bin/mfsmount /mnt/MFS -H 10.2.0.91 -o allow_other & /usr/sbin/service nginx start &
+#!/bin/bash
+/usr/bin/mfsmount /mnt/MFS -H 10.2.0.91 -o allow_other ;
+/usr/sbin/service nginx start ;
